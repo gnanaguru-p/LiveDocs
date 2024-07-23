@@ -1,7 +1,6 @@
-import { withSentryConfig } from "@sentry/nextjs";
+const { withSentryConfig } = require("@sentry/nextjs");
 
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
@@ -13,7 +12,6 @@ images: {
   }]
 }
 }
-
 export default withSentryConfig(
   nextConfig,
   {
